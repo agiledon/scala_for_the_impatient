@@ -1,8 +1,8 @@
 import scala.util.Random
 
-def generateArrayWithRandomNumber(n: Int) = {
+def randomArray(n: Int) = {
 	//val resultArray = new Array[Int](n)
-	for (index <- 0 until n) yield Random.nextInt(n)
+	(for (index <- 0 until n) yield Random.nextInt(n)).toArray
 	//resultArray
 }
 
